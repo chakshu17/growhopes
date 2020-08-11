@@ -11,10 +11,10 @@
     <section style="width: 500px; text-align: center;">
       <img
         src="assets/Images/home/mission.jpg"
-        style="width: 400x; height: 200px; border-radius: 50%;"
+        style="width: 500x; height: 250px; border-radius: 50%;"
       />
-      <h2 style="font-size: 26px;">Our Mission</h2>
-      <p style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+      <h2 style="font-size: 28px;">Our Mission</h2>
+      <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
         We deliver what we promise, efficient and promising prospected
         candidates to our clients. We want to give each of you the time and
         guidance you deserve. To provide the best services with effective
@@ -24,16 +24,43 @@
     <section style="width: 500px; text-align: center;">
       <img
         src="assets/Images/home/vision.jpg"
-        style="width: 400x; height: 200px; border-radius: 50%;"
+        style="width: 500x; height: 250px; border-radius: 50%;"
       />
-      <h2 style="font-size: 26px;">Our Vision</h2>
-      <p style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+      <h2 style="font-size: 28px;">Our Vision</h2>
+      <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
         To change the perception of recruitment and consultancy by devoting
         ourselves to the happiness of our clients, employees and candidates.
       </p>
     </section>
   </div>
   <br />
+  <br />
+  <br />
+  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+    <div
+      style="
+        text-align: center;
+        font-size: 50px;
+        line-height: 45px;
+        font-family: cursive;
+        color: royalblue;
+      "
+    >
+      Clients we Work For:
+    </div>
+    <div style="width: 50%; height: 70%;">
+      <ng-image-slider
+        [images]="imageObject"
+        [infinite]="true"
+        [autoSlide]="1"
+        [imageSize]="{ width: '100%', height: 700 }"
+        slideImage="1"
+        #nav
+      ></ng-image-slider>
+    </div>
+    <br />
+  </div>
+
   <div class="bg1"></div>
   <br />
   <div fxLayout="column" fxLayoutGap="50px" fxLayoutAlign="center center">
@@ -43,6 +70,7 @@
         font-size: 60px;
         line-height: 50px;
         font-family: cursive;
+        color: royalblue;
       "
     >
       Meet Our Team
@@ -161,9 +189,9 @@
     </div>
     <br /><br />
   </div>
-  <!-- <app-ourservices></app-ourservices> -->
+  <div class="bg2"></div>
+ <app-ourservices></app-ourservices>
 </div>
-
 
 <div fxHide.gt-md>
   <div class="mobcontainer">
@@ -200,7 +228,31 @@
       </p>
     </section>
   </div>
-  <br />
+  <br /> <br>
+  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+    <div
+      style="
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+        font-family: cursive;
+        color: royalblue;
+      "
+    >
+      Clients we Work For:
+    </div>
+    <div style="width: 100%; height: 70%;">
+      <ng-image-slider
+        [images]="imageObject"
+        [infinite]="true"
+        [autoSlide]="1"
+        [imageSize]="{ width: '100%', height: 400 }"
+        slideImage="1"
+        #nav
+      ></ng-image-slider>
+    </div>
+    <br />
+  </div>
   <div class="bg1"></div>
   <br />
   <div fxLayout="column" fxLayoutGap="50px" fxLayoutAlign="center center">
@@ -210,6 +262,7 @@
         font-size: 45px;
         line-height: 35px;
         font-family: cursive;
+        color: royalblue;
       "
     >
       Meet Our Team
@@ -282,51 +335,48 @@
       </section>
     </div>
 
-      <section>
-        <mat-card class="matmob">
-          <mat-card-title>Shivansh Arora</mat-card-title>
-          <mat-card-subtitle>Strategic Consultant</mat-card-subtitle>
-          <img class="personmob" src="/assets/Images/home/mission.jpg" /><br />
-          <div fxLayout fxLayoutAlign="center center" fxLayoutGap="50px">
-            <section>
-              <a href="mailto: simplyshivansh10@gmail.com "
-                ><img class="circle" src="\assets\Images\home\icon\gmail.png"
-              /></a>
-            </section>
-            <section>
-              <a href=" https://www.linkedin.com/in/shivansharora/"
-                ><img
-                  class="circle"
-                  src="\assets\Images\home\icon\linkedin.png"
-              /></a>
-            </section>
-          </div>
-        </mat-card>
-      </section>
+    <section>
+      <mat-card class="matmob">
+        <mat-card-title>Shivansh Arora</mat-card-title>
+        <mat-card-subtitle>Strategic Consultant</mat-card-subtitle>
+        <img class="personmob" src="/assets/Images/home/mission.jpg" /><br />
+        <div fxLayout fxLayoutAlign="center center" fxLayoutGap="50px">
+          <section>
+            <a href="mailto: simplyshivansh10@gmail.com "
+              ><img class="circle" src="\assets\Images\home\icon\gmail.png"
+            /></a>
+          </section>
+          <section>
+            <a href=" https://www.linkedin.com/in/shivansharora/"
+              ><img class="circle" src="\assets\Images\home\icon\linkedin.png"
+            /></a>
+          </section>
+        </div>
+      </mat-card>
+    </section>
 
-      <section>
-        <mat-card class="matmob">
-          <mat-card-title>Tanya Dhingra</mat-card-title>
-          <mat-card-subtitle>Social Media Head</mat-card-subtitle>
-          <img class="personmob" src="/assets/Images/home/mission.jpg" /><br />
-          <div fxLayout fxLayoutAlign="center center" fxLayoutGap="50px">
-            <section>
-              <a href="mailto:  taniyadhingra97@gmail.com "
-                ><img class="circle" src="\assets\Images\home\icon\gmail.png"
-              /></a>
-            </section>
-            <section>
-              <a href="https://www.linkedin.com/in/tanya-dhingra-b92300161"
-                ><img
-                  class="circle"
-                  src="\assets\Images\home\icon\linkedin.png"
-              /></a>
-            </section>
-          </div>
-        </mat-card>
-      </section>
+    <section>
+      <mat-card class="matmob">
+        <mat-card-title>Tanya Dhingra</mat-card-title>
+        <mat-card-subtitle>Social Media Head</mat-card-subtitle>
+        <img class="personmob" src="/assets/Images/home/mission.jpg" /><br />
+        <div fxLayout fxLayoutAlign="center center" fxLayoutGap="50px">
+          <section>
+            <a href="mailto:  taniyadhingra97@gmail.com "
+              ><img class="circle" src="\assets\Images\home\icon\gmail.png"
+            /></a>
+          </section>
+          <section>
+            <a href="https://www.linkedin.com/in/tanya-dhingra-b92300161"
+              ><img class="circle" src="\assets\Images\home\icon\linkedin.png"
+            /></a>
+          </section>
+        </div>
+      </mat-card>
+    </section>
 
     <br /><br />
   </div>
-  <!-- <app-ourservices></app-ourservices> -->
+  <div class="bg2"></div>
+  <app-ourservices></app-ourservices>
 </div>
