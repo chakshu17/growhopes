@@ -1,5 +1,82 @@
 <div fxHide.lt-md>
-  <div class="container">
+  <mat-toolbar (scroll)="onWindowScroll($event)">
+    <div fxHide.gt-md>
+      <button mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <a
+        style="
+          font-size: xx-large;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+        routerLink="/home"
+        (click)="scroll(home)"
+      >
+        Grow Hopes</a
+      >
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
+      <ul fxLayout class="navbar" fxLayoutGap="20px">
+        <li>
+          <a
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: large;
+            "
+            routerLink="/home"
+            (click)="scroll(home)"
+            >Home
+          </a>
+        </li>
+        <li style="color: white;">|</li>
+        <li>
+          <a
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: large;
+            "
+            routerLink="/ourservcices"
+            (click)="scroll(ourservices)"
+            >Our Services</a
+          >
+        </li>
+        <li style="color: white;">|</li>
+        <li>
+          <a
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: large;
+            "
+            routerLink="/aboutus"
+            (click)="scroll(about)"
+            >About Us</a
+          >
+        </li>
+        <li style="color: white;">|</li>
+        <li>
+          <a
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: large;
+            "
+            routerLink="/contactus"
+            (click)="scroll(contact)"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar>
+  <br />
+  <div #home class="container">
+    <br />
+    <br />
     <img class="homeimg" src="\assets\Images\home\logo.png" />
     <div class="center">
       <p>Grow Hopes</p>
@@ -190,9 +267,19 @@
     <br /><br />
   </div>
   <div class="bg2"></div>
-  <app-aboutus></app-aboutus>
+  <div #about>&nbsp; <br /></div>
+  <div>
+    <app-aboutus></app-aboutus>
+  </div>
+
   <div class="bg3"></div>
- <app-ourservices></app-ourservices>
+  <div #ourservices>
+    <app-ourservices></app-ourservices>
+  </div>
+  <div class="bg1"></div>
+  <div #contact>
+    <app-contactus></app-contactus>
+  </div>
 </div>
 <!-- Mobile view -->
 <div fxHide.gt-md>
@@ -230,7 +317,8 @@
       </p>
     </section>
   </div>
-  <br /> <br>
+  <br />
+  <br />
   <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
     <div
       style="
@@ -382,5 +470,5 @@
   <div class="bg2"></div>
   <app-aboutus></app-aboutus>
   <div class="bg3"></div>
- <app-ourservices></app-ourservices>
+  <app-ourservices></app-ourservices>
 </div>

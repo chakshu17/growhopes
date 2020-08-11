@@ -1,0 +1,66 @@
+<mat-toolbar (scroll)="onWindowScroll($event)">
+  <div fxHide.gt-md>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a
+      style="
+        font-size: xx-large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      "
+      routerLink="/home"
+    >
+      Grow Hopes</a
+    >
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
+    <ul fxLayout class="navbar" fxLayoutGap="40px">
+      <li >
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/home"
+          >Home
+        </a>
+      </li>
+      <li >
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/ourservcices"
+          >our Services</a
+        >
+      </li>
+      <li >
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/aboutus"
+          >About Us</a
+        >
+      </li>
+      <!-- <li >
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/contactus"
+          >Contact Us</a
+        >
+      </li> -->
+    </ul>
+  </div>
+</mat-toolbar>

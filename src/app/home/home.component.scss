@@ -86,3 +86,26 @@
 .matmob{
   width: 320px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+a:active {
+  color: lightgrey;
+}
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+mat-toolbar {
+  z-index: 100;
+  position: fixed;
+  background-color: rgb(22,22,22);
+}
+
+.active {
+  background-color: pink;
+}
