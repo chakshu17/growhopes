@@ -3,7 +3,6 @@ import {
   OnInit,
   Output,
   EventEmitter,
-  HostListener,
 } from '@angular/core';
 
 @Component({
@@ -20,17 +19,9 @@ export class HomeComponent implements OnInit {
     this.sidenavToggle.emit;
   }
   ngOnInit(): void {}
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e) {
-    let element = document.querySelector('  mat-toolbar');
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('  .active');
-    } else {
-      element.classList.remove('  .active');
-    }
-  }
+
   scroll(el: HTMLElement) {
-    el.scrollIntoView();
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
   }
   imageObject = [
     {

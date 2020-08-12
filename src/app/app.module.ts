@@ -7,6 +7,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     AboutusComponent,
     HeaderComponent,
     ContactusComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     MatCardModule,
     NgImageSliderModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
