@@ -13,7 +13,7 @@ import {
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  @Output() sidenavToggle = new EventEmitter();
+  @Output() sidenavToggle = new EventEmitter<void>();
 
   onToggleSidenav() {
     this.sidenavToggle.emit;

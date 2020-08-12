@@ -8,6 +8,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ContactusComponent,
     FooterComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,10 @@ import { FooterComponent } from './footer/footer.component';
     NgImageSliderModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatSidenavModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
