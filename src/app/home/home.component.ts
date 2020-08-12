@@ -13,16 +13,10 @@ import {
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  @Output() sidenavToggle = new EventEmitter<void>();
 
-  onToggleSidenav() {
-    this.sidenavToggle.emit;
-  }
   ngOnInit(): void {}
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
-  }
+
   imageObject = [
     {
       image: 'assets/Images/home/etsy.jpeg',

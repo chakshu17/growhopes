@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'growhopes';
+  @Output() sidenavToggle = new EventEmitter<void>();
+
+  onToggleSidenav() {
+    this.sidenavToggle.emit;
+  }
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+  }
+
+
 }

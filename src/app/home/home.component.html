@@ -1,81 +1,4 @@
 <div fxHide.lt-md>
-  <mat-toolbar >
-    <div fxHide.gt-md>
-      <button style="color: white;" mat-icon-button (click)="onToggleSidenav()">
-        <mat-icon>menu</mat-icon> &nbsp;
-      </button>
-    </div>
-    <div>
-      <a
-        style="
-          font-size: x-large;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        "
-        routerLink="/home"
-        (click)="scroll(home)"
-      >
-        Grow Hopes</a
-      >
-    </div>
-    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
-      <ul fxLayout class="navbar" fxLayoutGap="20px">
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/home"
-            (click)="scroll(home)"
-            >Home
-          </a>
-        </li>
-        <li style="color: white;">|</li>
-
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/aboutus"
-            (click)="scroll(about)"
-            >About Us</a
-          >
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/ourservcices"
-            (click)="scroll(ourservices)"
-            >Our Services</a
-          >
-        </li>
-
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/contactus"
-            (click)="scroll(contact)"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </div>
-  </mat-toolbar>
-  <br />
   <div #home class="container">
     <br />
     <br />
@@ -268,119 +191,10 @@
     </div>
     <br /><br />
   </div>
-  <div class="bg2" > </div>
-  <div #about>
-    &nbsp;
-  </div>
-  <div >
-    &nbsp;
-  </div>
-  <div >
-    <app-aboutus ></app-aboutus>
-  </div>
-
-  <div class="bg3"></div>
-  <div  #ourservices>
-    &nbsp;
-  </div>
-  <div >
-    &nbsp;
-  </div>
-  <div>
-    <app-ourservices></app-ourservices>
-  </div>
-  <div class="bg1"></div>
-  <div #contact>
-    &nbsp;
-  </div>
-  <div>
-    &nbsp;
-  </div>
-  <div >
-    <app-contactus></app-contactus>
-  </div>
-
-  <div>
-    <app-footer></app-footer>
-  </div>
 </div>
 <!-- Mobile view -->
 <div fxHide.gt-md>
-  <mat-toolbar >
-    <div fxHide.gt-md>
-      <button style="color: white;" mat-icon-button (click)="onToggleSidenav()">
-        <mat-icon>menu</mat-icon> &nbsp;
-      </button>
-    </div>
-    <div>
-      <a
-        style="
-          font-size: x-large;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        "
-        routerLink="/home"
-        (click)="scroll(home)"
-      >
-        Grow Hopes</a
-      >
-    </div>
-    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
-      <ul fxLayout class="navbar" fxLayoutGap="20px">
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/home"
-            (click)="scroll(home)"
-            >Home
-          </a>
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/ourservcices"
-            (click)="scroll(ourservices)"
-            >Our Services</a
-          >
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/aboutus"
-            (click)="scroll(about)"
-            >About Us</a
-          >
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/contactus"
-            (click)="scroll(contact)"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </div>
-  </mat-toolbar>
-  <br> <br> <br>
+
   <div #home class="mobcontainer">
     <img class="mobimg" src="\assets\Images\home\logo.png" />
     <div class="mobcenter">
@@ -562,20 +376,6 @@
         </div>
       </mat-card>
     </section>
+  </div>
 
-    <br /><br />
-  </div>
-  <div class="bg2"></div>
-  <div #about>
-    <app-aboutus></app-aboutus>
-  </div>
-  <div class="bg3"></div>
- <div #ourservices>
-
-  <app-ourservices></app-ourservices>
- </div>
-  <div #contact>
-    <app-contactus></app-contactus>
-  </div>
-  <app-footer></app-footer>
 </div>

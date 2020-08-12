@@ -1,0 +1,44 @@
+
+.bg2 {
+  background-image: url("/assets/Images/home/bg2.jpg");
+  min-height: 400px;
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg3 {
+  background-image: url("/assets/Images/home/bg3.jpg");
+  min-height: 400px;
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover,
+a:active {
+  color: white;
+}
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+mat-toolbar {
+  z-index: 100;
+  position: fixed;
+  // background-color: rgb(22,22,22);
+  background-color: rgb(226, 224, 224);
+}
+
+.active {
+  background-color: pink;
+}
