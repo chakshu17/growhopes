@@ -115,118 +115,137 @@
     <app-footer></app-footer>
   </div>
 </div>
+<!--
+
+<mat-sidenav #sidenav role="navigation">
+  <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
+</mat-sidenav> -->
 
 <div fxHide.gt-md>
-  <mat-toolbar >
-    <div fxHide.gt-md>
-      <button style="color: white;" mat-icon-button (click)="onToggleSidenav()">
-        <mat-icon>menu</mat-icon> &nbsp;
-      </button>
-    </div>
-    <div>
-      <a
-        style="
-          font-size: x-large;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        "
-        routerLink="/home"
-        (click)="scroll(home)"
-      >
-        Grow Hopes</a
-      >
-    </div>
-    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
-      <ul fxLayout class="navbar" fxLayoutGap="20px">
-        <li>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+     <div (sidenavToggle)="sidenav.toggle()">
+      <mat-toolbar >
+        <div fxHide.gt-md>
+          <button style="color: white;" mat-icon-button (click)="onToggleSidenav()" >
+            <mat-icon>menu</mat-icon> &nbsp;
+          </button>
+
+        </div>
+        <div>
           <a
             style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
+              font-size: x-large;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             "
             routerLink="/home"
             (click)="scroll(home)"
-            >Home
-          </a>
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/ourservcices"
-            (click)="scroll(ourservices)"
-            >Our Services</a
           >
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/aboutus"
-            (click)="scroll(about)"
-            >About Us</a
+            Grow Hopes</a
           >
-        </li>
-        <li style="color: white;">|</li>
-        <li>
-          <a
-            style="
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-              font-size: large;
-            "
-            routerLink="/contactus"
-            (click)="scroll(contact)"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </div>
-  </mat-toolbar>
-  <br> <br> <br> <div #home>
-    <app-home></app-home>
-  </div>
-  <div class="bg2" > </div>
-  <div #about>
-    &nbsp;
-  </div>
-  <div >
-    &nbsp;
-  </div>
-  <div >
-    <app-aboutus ></app-aboutus>
-  </div>
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.lt-md>
+          <ul fxLayout class="navbar" fxLayoutGap="20px">
+            <li>
+              <a
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+                  font-size: large;
+                "
+                routerLink="/home"
+                (click)="scroll(home)"
+                >Home
+              </a>
+            </li>
+            <li style="color: white;">|</li>
+            <li>
+              <a
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+                  font-size: large;
+                "
+                routerLink="/ourservcices"
+                (click)="scroll(ourservices)"
+                >Our Services</a
+              >
+            </li>
+            <li style="color: white;">|</li>
+            <li>
+              <a
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+                  font-size: large;
+                "
+                routerLink="/aboutus"
+                (click)="scroll(about)"
+                >About Us</a
+              >
+            </li>
+            <li style="color: white;">|</li>
+            <li>
+              <a
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+                  font-size: large;
+                "
+                routerLink="/contactus"
+                (click)="scroll(contact)"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </mat-toolbar>
+     </div>
+      <main>
+        <br> <br> <br> <div #home>
+          <app-home></app-home>
+        </div>
+        <div class="bg2" > </div>
+        <div #about>
+          &nbsp;
+        </div>
+        <div >
+          &nbsp;
+        </div>
+        <div >
+          <app-aboutus ></app-aboutus>
+        </div>
 
-  <div class="bg3"></div>
-  <div  #ourservices>
-    &nbsp;
-  </div>
-  <div >
-    &nbsp;
-  </div>
-  <div>
-    <app-ourservices></app-ourservices>
-  </div>
-  <div class="bg1"></div>
-  <div #contact>
-    &nbsp;
-  </div>
-  <div>
-    &nbsp;
-  </div>
-  <div >
-    <app-contactus></app-contactus>
-  </div>
+        <div class="bg3"></div>
+        <div  #ourservices>
+          &nbsp;
+        </div>
+        <div >
+          &nbsp;
+        </div>
+        <div>
+          <app-ourservices></app-ourservices>
+        </div>
+        <div class="bg1"></div>
+        <div #contact>
+          &nbsp;
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div >
+          <app-contactus></app-contactus>
+        </div>
 
-  <div>
-    <app-footer></app-footer>
-  </div>
+        <div>
+          <app-footer></app-footer>
+        </div>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 </div>

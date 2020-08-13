@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
     this.sidenavToggle.emit;
   }
   ngOnInit(): void {}
-
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+  }
 
 }
