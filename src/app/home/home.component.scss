@@ -42,14 +42,19 @@
 .person {
   width: 350px;
   height: 350px;
+  border-radius: 2%;
+}
+.personmob{
+  width: 320px;
+  height: 350px;
+  border-radius: 2%;
 }
 .personmob{
   width: 320px;
   height: 350px;
 }
-.personmob{
-  width: 320px;
-  height: 350px;
+mat-card{
+  border-radius: 3%;
 }
 .circle {
   height: 50px;
@@ -67,4 +72,7 @@
 }
 .matmob{
   width: 320px;
+}
+.team{
+  background-color: rgb(193, 253, 253);
 }
