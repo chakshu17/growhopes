@@ -17,6 +17,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
   transform: translate(-50%, -50%);
   color: black;
   line-height: 40px;
@@ -30,9 +31,9 @@
   line-height: 20px;
 }
 .homeimg {
-  width: 50%;
+  width: 40%;
   height: 650px;
-  opacity: 0.2;
+  // opacity: 0.3;
 }
 .mobimg {
   width: 100%;
