@@ -10,12 +10,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
   @Output() sidenavToggle = new EventEmitter();
 
-  onToggleSidenav() {
-    this.sidenavToggle.emit;
-  }
   ngOnInit(): void {}
-  // scroll(el: HTMLElement) {
-  //   el.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
-  // }
+  onToggleSidenav() {
+    this.sidenavToggle.emit();
+  }
 
 }

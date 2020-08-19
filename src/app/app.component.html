@@ -123,13 +123,13 @@
 
 <div fxHide.gt-md>
 
-<mat-sidenav-container>
+<mat-sidenav-container >
     <mat-sidenav #sidenav role="navigation">
       <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
       <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-      <main>
+      <!-- <main>
         <br> <br> <br> <div #home>
           <app-home></app-home>
         </div>
@@ -168,19 +168,12 @@
         <div>
           <app-footer></app-footer>
         </div>
-      </main>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  <!-- <mat-sidenav-container>
-    <mat-sidenav #sidenav role="navigation">
-      <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+      </main> -->
       <main>
         <router-outlet></router-outlet>
         <app-footer></app-footer>
       </main>
     </mat-sidenav-content>
-  </mat-sidenav-container> -->
+  </mat-sidenav-container>
+
 </div>
