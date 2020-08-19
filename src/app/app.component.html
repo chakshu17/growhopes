@@ -1,5 +1,5 @@
 <div fxHide.lt-md>
-  <mat-toolbar >
+  <mat-toolbar>
     <div fxHide.gt-md>
       <button style="color: white;" mat-icon-button (click)="onToggleSidenav()">
         <mat-icon>menu</mat-icon> &nbsp;
@@ -31,7 +31,7 @@
             >Home
           </a>
         </li>
-        <li style="color: white;font-size:26px">|</li>
+        <li style="color: white; font-size: 26px;">|</li>
 
         <li>
           <a
@@ -45,7 +45,7 @@
             >About Us</a
           >
         </li>
-        <li style="color: white;font-size:26px">|</li>
+        <li style="color: white; font-size: 26px;">|</li>
         <li>
           <a
             style="
@@ -59,7 +59,7 @@
           >
         </li>
 
-        <li style="color: white;font-size:26px">|</li>
+        <li style="color: white; font-size: 26px;">|</li>
         <li>
           <a
             style="
@@ -75,26 +75,30 @@
       </ul>
     </div>
   </mat-toolbar>
-  <br />
+  <div>
+
   <div #home>
+    &nbsp;
+  </div>
+  <div>
     <app-home></app-home>
   </div>
-  <div class="bg2" > </div>
+  <div class="bg2"></div>
   <div #about>
     &nbsp;
   </div>
-  <div >
+  <div>
     &nbsp;
   </div>
-  <div >
-    <app-aboutus ></app-aboutus>
+  <div>
+    <app-aboutus></app-aboutus>
   </div>
 
   <div class="bg3"></div>
-  <div  #ourservices>
+  <div #ourservices>
     &nbsp;
   </div>
-  <div >
+  <div>
     &nbsp;
   </div>
   <div>
@@ -107,73 +111,28 @@
   <div>
     &nbsp;
   </div>
-  <div >
+  <div>
     <app-contactus></app-contactus>
   </div>
 
   <div>
     <app-footer></app-footer>
   </div>
+  </div>
 </div>
-<!--
 
-<mat-sidenav #sidenav role="navigation">
-  <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
-</mat-sidenav> -->
 
 <div fxHide.gt-md>
-
-<mat-sidenav-container >
+  <mat-sidenav-container>
     <mat-sidenav #sidenav role="navigation">
       <app-sidenav (closesidenav)="sidenav.close()"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
       <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-      <!-- <main>
-        <br> <br> <br> <div #home>
-          <app-home></app-home>
-        </div>
-        <div class="bg2" > </div>
-        <div #about>
-          &nbsp;
-        </div>
-        <div >
-          &nbsp;
-        </div>
-        <div >
-          <app-aboutus ></app-aboutus>
-        </div>
-
-        <div class="bg3"></div>
-        <div  #ourservices>
-          &nbsp;
-        </div>
-        <div >
-          &nbsp;
-        </div>
-        <div>
-          <app-ourservices></app-ourservices>
-        </div>
-        <div class="bg1"></div>
-        <div #contact>
-          &nbsp;
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div >
-          <app-contactus></app-contactus>
-        </div>
-
-        <div>
-          <app-footer></app-footer>
-        </div>
-      </main> -->
       <main>
         <router-outlet></router-outlet>
         <app-footer></app-footer>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 </div>

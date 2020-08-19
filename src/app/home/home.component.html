@@ -1,75 +1,89 @@
 <div fxHide.lt-md>
-  <div #home class="container">
-    <br />
-    <br />
+  <div fxLayout fxLayoutGap="150px" fxLayoutAlign="center" class="container">
+    <div class="center" style="text-align: left;">
+      <p style="font-size: 45px; margin-bottom: 50px; color: burlywood;">
+        Helping you to reach success!
+      </p>
+      <p>JOB CONSULTANCY,</p>
+      <p>CAREER, PSYCHOLOGY,</p>
+      <p>
+        CORPORATE COUNSELLING & MANY MORE.
+      </p>
+    </div>
     <img class="homeimg" src="\assets\Images\home\logo.png" />
-    <div class="center">
-      <p>Grow Hopes</p>
-    </div>
   </div>
   <br />
   <br />
- <div style="background-color: rgb(206, 233, 250);padding-top: 20px;">
-  <div fxLayout fxLayoutGap="80px" fxLayoutAlign="center" >
-    <br>
-    <section style="width: 500px; text-align: center;">
-      <img
-        src="assets/Images/home/mission.jpg"
-        style="width: 500x; height: 250px; border-radius: 50%;"
-      />
-      <h2 style="font-size: 28px;">Our Mission</h2>
-      <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
-        We deliver what we promise, efficient and promising prospected
-        candidates to our clients. We want to give each of you the time and
-        guidance you deserve. To provide the best services with effective
-        results, changing lives everyday - RIGHT MAN AT RIGHT JOB.
-      </p>
-    </section>
-    <section style="width: 500px; text-align: center;">
-      <img
-        src="assets/Images/home/vision.jpg"
-        style="width: 500x; height: 250px; border-radius: 50%;"
-      />
-      <h2 style="font-size: 28px;">Our Vision</h2>
-      <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
-        To change the perception of recruitment and consultancy by devoting
-        ourselves to the happiness of our clients, employees and candidates.
-      </p>
-    </section>
-  </div>
-  <br />
-  <br />
-  <br />
-  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px" >
-    <div
-      style="
-        text-align: center;
-        font-size: 50px;
-        line-height: 45px;
-        font-weight: 500;
-        color: black;
-      "
-    >
-      Clients we Work For:
-    </div>
-    <div style="width: 40%; height: 70%;">
-      <ng-image-slider
-        [images]="imageObject"
-        [infinite]="true"
-        [autoSlide]="1"
-        [imageSize]="{ width: '100%', height: 500 }"
-        slideImage="1"
-        #nav
-      ></ng-image-slider>
+  <div style="background-color: rgb(206, 233, 250); padding-top: 20px;">
+    <div fxLayout fxLayoutGap="80px" fxLayoutAlign="center">
+      <br />
+      <section style="width: 500px; text-align: center;">
+        <img
+          src="assets/Images/home/mission.jpg"
+          style="width: 500x; height: 250px; border-radius: 50%;"
+        />
+        <h2 style="font-size: 28px;">Our Mission</h2>
+        <p
+          style="font-size: 18px; font-family: 'Times New Roman', Times, serif;"
+        >
+          We deliver what we promise, efficient and promising prospected
+          candidates to our clients. We want to give each of you the time and
+          guidance you deserve. To provide the best services with effective
+          results, changing lives everyday - RIGHT MAN AT RIGHT JOB.
+        </p>
+      </section>
+      <section style="width: 500px; text-align: center;">
+        <img
+          src="assets/Images/home/vision.jpg"
+          style="width: 500x; height: 250px; border-radius: 50%;"
+        />
+        <h2 style="font-size: 28px;">Our Vision</h2>
+        <p
+          style="font-size: 18px; font-family: 'Times New Roman', Times, serif;"
+        >
+          To change the perception of recruitment and consultancy by devoting
+          ourselves to the happiness of our clients, employees and candidates.
+        </p>
+      </section>
     </div>
     <br />
+    <br />
+    <br />
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+      <div
+        style="
+          text-align: center;
+          font-size: 50px;
+          line-height: 45px;
+          font-weight: 500;
+          color: black;
+        "
+      >
+        Clients we Work For:
+      </div>
+      <div style="width: 40%; height: 70%;">
+        <ng-image-slider
+          [images]="imageObject"
+          [infinite]="true"
+          [autoSlide]="1"
+          [imageSize]="{ width: '100%', height: 550 }"
+          slideImage="1"
+          #nav
+        ></ng-image-slider>
+      </div>
+      <br />
+    </div>
   </div>
- </div>
 
   <div class="bg1"></div>
-  <br />
-  <div fxLayout="column" fxLayoutGap="50px" fxLayoutAlign="center center" style="background-color:rgb(166, 243, 235);">
-    <br>
+
+  <div
+    fxLayout="column"
+    fxLayoutGap="50px"
+    fxLayoutAlign="center center"
+    style="background-color: rgb(166, 243, 235);"
+  >
+    <br />
     <div
       style="
         text-align: center;
@@ -198,75 +212,82 @@
 </div>
 <!-- Mobile view -->
 <div fxHide.gt-md>
-
   <div #home class="mobcontainer">
     <img class="mobimg" src="\assets\Images\home\logo.png" />
     <div class="mobcenter">
       <p style="font-size: 24px;">Grow Hopes</p>
     </div>
-
   </div>
-  <div style="background-color: rgb(206, 233, 250);padding-top: 20px;">
+  <div style="background-color: rgb(206, 233, 250); padding-top: 20px;">
     <br />
-  <br />
-  <div fxLayout="column" fxLayoutGap="80px" fxLayoutAlign="center center">
-    <section style="width: 300px; text-align: center;">
-      <img
-        src="assets/Images/home/mission.jpg"
-        style="width: 400x; height: 200px; border-radius: 50%;"
-      />
-      <h2 style="font-size: 26px;">Our Mission</h2>
-      <p style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
-        We deliver what we promise, efficient and promising prospected
-        candidates to our clients. We want to give each of you the time and
-        guidance you deserve. To provide the best services with effective
-        results, changing lives everyday - RIGHT MAN AT RIGHT JOB.
-      </p>
-    </section>
-    <section style="width: 300px; text-align: center;">
-      <img
-        src="assets/Images/home/vision.jpg"
-        style="width: 400x; height: 200px; border-radius: 50%;"
-      />
-      <h2 style="font-size: 26px;">Our Vision</h2>
-      <p style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
-        To change the perception of recruitment and consultancy by devoting
-        ourselves to the happiness of our clients, employees and candidates.
-      </p>
-    </section>
-  </div>
-  <br />
-  <br />
-  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px" >
-    <div
-      style="
-        text-align: center;
-        font-size: 35px;
-        line-height: 40px;
-        font-weight: 500;
-
-        color: BLACK;
-      "
-    >
-      Clients we Work For:
-    </div>
-    <div style="width: 100%; height: 70%;">
-      <ng-image-slider
-        [images]="imageObject"
-        [infinite]="true"
-        [autoSlide]="1"
-        [imageSize]="{ width: '100%', height: 400 }"
-        slideImage="1"
-        #nav
-      ></ng-image-slider>
+    <br />
+    <div fxLayout="column" fxLayoutGap="80px" fxLayoutAlign="center center">
+      <section style="width: 300px; text-align: center;">
+        <img
+          src="assets/Images/home/mission.jpg"
+          style="width: 400x; height: 200px; border-radius: 50%;"
+        />
+        <h2 style="font-size: 26px;">Our Mission</h2>
+        <p
+          style="font-size: 16px; font-family: 'Times New Roman', Times, serif;"
+        >
+          We deliver what we promise, efficient and promising prospected
+          candidates to our clients. We want to give each of you the time and
+          guidance you deserve. To provide the best services with effective
+          results, changing lives everyday - RIGHT MAN AT RIGHT JOB.
+        </p>
+      </section>
+      <section style="width: 300px; text-align: center;">
+        <img
+          src="assets/Images/home/vision.jpg"
+          style="width: 400x; height: 200px; border-radius: 50%;"
+        />
+        <h2 style="font-size: 26px;">Our Vision</h2>
+        <p
+          style="font-size: 16px; font-family: 'Times New Roman', Times, serif;"
+        >
+          To change the perception of recruitment and consultancy by devoting
+          ourselves to the happiness of our clients, employees and candidates.
+        </p>
+      </section>
     </div>
     <br />
-  </div>
+    <br />
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+      <div
+        style="
+          text-align: center;
+          font-size: 35px;
+          line-height: 40px;
+          font-weight: 500;
+
+          color: BLACK;
+        "
+      >
+        Clients we Work For:
+      </div>
+      <div style="width: 100%; height: 70%;">
+        <ng-image-slider
+          [images]="imageObject"
+          [infinite]="true"
+          [autoSlide]="1"
+          [imageSize]="{ width: '100%', height: 400 }"
+          slideImage="1"
+          #nav
+        ></ng-image-slider>
+      </div>
+      <br />
+    </div>
   </div>
   <div class="bg1"></div>
   <br />
-  <div fxLayout="column" fxLayoutGap="50px" fxLayoutAlign="center center" style="background-color: rgb(195, 248, 243);">
-    <br>
+  <div
+    fxLayout="column"
+    fxLayoutGap="50px"
+    fxLayoutAlign="center center"
+    style="background-color: rgb(195, 248, 243);"
+  >
+    <br />
     <div
       style="
         text-align: center;
@@ -283,7 +304,10 @@
         <mat-card class="matmob">
           <mat-card-title>Shashank Verma</mat-card-title>
           <mat-card-subtitle>Founder</mat-card-subtitle>
-          <img class="personmob" src="/assets/Images/team/shashank1.jpg" /><br />
+          <img
+            class="personmob"
+            src="/assets/Images/team/shashank1.jpg"
+          /><br />
           <div fxLayout fxLayoutAlign="center center" fxLayoutGap="50px">
             <section>
               <a href="mailto: growhopes0@gmail.com "
@@ -385,7 +409,6 @@
         </div>
       </mat-card>
     </section>
-    <br>
+    <br />
   </div>
-
 </div>
