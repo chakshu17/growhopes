@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "growhopes-4b068": {
+      "hosting": {
+        "growhopes": [
+          "growhopes-4b068"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "growhopes-4b068"
+  }
+}

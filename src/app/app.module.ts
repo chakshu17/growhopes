@@ -22,6 +22,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +47,8 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     MatIconModule,
     MatButtonModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+
 
   ],
   providers: [],
